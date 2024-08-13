@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Random Password Generator</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+        <main>
+                <h1>random password <br> generator :</h1>
+                <form>
+                        <div class="password">
+                                <label for="password-length">password length:</label>
+                                <input type="number" id="password-length" min="1" value="1">
+                        </div>
+
+                        <div class="lower-upper">
+                                <div class="lowercase">
+                                        <label for="lowercase">add lowercase:</label>
+                                        <select id="lowercase">
+                                                <option value="1" selected>yes</option>
+                                                <option value="0">no</option>
+                                        </select>
+                                </div>
+
+                                <div class="uppercase">
+                                        <label for="uppercase">add uppercase:</label>
+                                        <select id="uppercase">
+                                                <option value="1" selected>yes</option>
+                                                <option value="0">no</option>
+                                        </select>
+                                </div>
+                        </div>
+
+                        <div class="symbol-num">
+                                <div class="symbol">
+                                        <label for="symbol">add symbol:</label>
+                                        <select id="symbol">
+                                                <option value="1" selected>yes</option>
+                                                <option value="0">no</option>
+                                        </select>
+                                </div>
+        
+                                <div class="number">
+                                        <label for="number">add number:</label>
+                                        <select id="number">
+                                                <option value="1" selected>yes</option>
+                                                <option value="0">no</option>
+                                        </select>
+                                </div>
+                        </div>
+                        <button type="button">generate</button>
+                
+                </form>
+                <div class="generated-password">
+                        <p></p>
+                </div>
+        </main>
+
+        <script src="app.js"></script>
+</body>
+
+</html>

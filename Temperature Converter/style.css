@@ -1,0 +1,115 @@
+* {
+        box-sizing: border-box;
+}
+
+body {
+        background: #b9bebc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+        font-family: Arial, Helvetica, sans-serif;
+
+}
+
+form {
+        background: #2b2a2a7d;
+        backdrop-filter: blur(50px);
+        width: 30rem;
+        height: 40rem;
+        text-align: center;
+        border-radius: 1rem;
+}
+
+h1 {
+        font-size: 2rem;
+        color: aliceblue;
+        margin: 2rem 0;
+}
+
+input[type="number"] {
+        height: 2.5rem;
+        width: 20rem;
+        background: #3d3c3c8e;
+        border: none;
+        border-radius: 1rem;
+        outline: none;
+        color: #fff;
+        font-size: 1.5rem;
+        padding-left: 15px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+        display: none;
+}
+
+input[type="radio"] {
+        width: 20px;
+        height: 20px;
+        border-radius: 1rem;
+        margin: 0 1rem;
+        padding: 0;
+}
+
+input[type="radio"]:checked~label {
+        font-weight: 800;
+}
+
+.convert-select {
+        margin: 2rem 0;
+}
+
+.ctof,
+.ftoc {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2rem 0;
+}
+
+label {
+        font-size: 2rem;
+        text-transform: capitalize;
+        color: #fff;
+}
+
+button {
+        width: 12rem;
+        height: 4rem;
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        border-radius: 1rem;
+        border: none;
+        background: #00d4e8c7;
+        font-weight: 600;
+        color: azure;
+        margin-top: 2rem;
+        transition: all .3s linear;
+        cursor: pointer;
+}
+
+button:hover {
+        transform: scale(1.1) translateY(-5px);
+
+}
+
+p {
+        margin-top: 2rem;
+        font-size: 2rem;
+        color: aliceblue;
+}
+
+@media(max-width:768px){
+        html{
+                font-size: 66%;
+        }
+        form {
+                width: 100%;
+                height: 50rem;
+        }
+        input[type="number"] {
+                width:90%;
+        }
+}

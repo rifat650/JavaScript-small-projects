@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container{
+max-width: 80%;
+margin: 0 auto;
+}
+.heading{
+    text-transform: capitalize;
+    font-size: 2rem;
+    text-align: center;
+    color: aliceblue;
+    background: #272525;
+}
+.images, .score-board{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+img{
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid transparent;
+}
+img:hover{
+border: 2px solid black;
+transform: scale(1.05);
+transition: all 0.3s linear;
+cursor: pointer;
+}
+p{
+    font-size: 1.3rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+.msg-container{
+    text-align: center;
+    margin-top: 50px;
+}
+#msg-text{
+    background: #000;
+    padding:15px 20px;
+    color: aliceblue;
+    border-radius: 10px;
+    display: inline-block;
+}

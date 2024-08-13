@@ -1,0 +1,151 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+body {
+        background: rgba(88, 88, 88, 0.733);
+        text-align: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+br{
+        display:none
+}
+
+main {
+        width: 80%;
+        background: #0000004d;
+        backdrop-filter: blur(1rem);
+        border-radius: 1rem;
+        margin: 0 auto;
+        padding: 1rem;
+}
+
+h1 {
+        text-transform: capitalize;
+        font-size: 2rem;
+        margin: 2rem 0;
+        color: rgb(140, 233, 233);
+}
+
+label {
+        font-size: 1.4rem;
+        text-transform: capitalize;
+        color: aliceblue;
+}
+
+.password {
+        margin: 2rem 0;
+}
+
+input {
+        outline: none;
+        height: 3rem;
+        width: 10rem;
+        font-size: 1.4rem;
+        color: aliceblue;
+        background: #1d151552;
+        border: none;
+        padding-left: 10px;
+        border-radius: 10px;
+        margin: 0 0 0 1rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+        display: none;
+}
+
+.lower-upper,.symbol-num{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        flex-wrap: wrap;
+        text-align: right;
+        margin: 0 auto;
+}
+
+select {
+
+        outline: none;
+        width: 8rem;
+        height: 3rem;
+        padding: 0 1rem;
+        font-size: 1.4rem;
+        background: #0f0d0d67;
+        border-radius: 1rem;
+        border: none;
+        line-height: 3rem;
+        color: rgb(255, 255, 255);
+        appearance: none;
+        text-transform: capitalize;
+}
+option{
+        background:#010101b6;
+}
+select:focus {
+        outline: none;
+        border-color: #007bff;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.lowercase,
+.uppercase,
+.symbol,
+.number {
+        margin: .4rem 2rem;
+}
+button{
+        border: none;
+        width: 12rem;
+        height: 3rem;
+        border-radius: 1rem;
+        text-transform: capitalize;
+        font-size: 1.5rem;
+        margin:2rem 0;
+}
+.generated-password{
+        margin: 2rem 0;
+        width: 100%;
+        word-wrap: break-word;
+
+}
+p{
+        color: aliceblue;
+        font-size: 1.5rem;
+}
+p span{
+        display: block;
+        margin: 1rem 0;
+}
+
+@media(max-width:620px){
+        html{
+                font-size: 70%;
+        }
+        main {
+                width: 100%;
+                border-radius: 0%;
+        }    
+        .lower-upper,.symbol-num{
+                width: 100%;
+        }
+}
+@media(max-width:420px){
+        html{
+                font-size: 68%;
+        }
+        .password {
+                margin: .5rem 0;
+        }
+        br{
+                display: block;
+        }
+        input{
+                margin: 0 0 0 .4rem;
+        }
+        
+  
+}

@@ -1,0 +1,62 @@
+*{
+        margin: 0;padding: 0;box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif
+}
+.container{
+        width: 100%;
+        text-align: center;
+        height: 100vh;
+}
+h1{
+        text-transform: capitalize;
+        font-size: 3rem;
+        margin: 2rem 0;
+}
+.input-box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 0 4rem 0;
+
+}
+label[for="dicenum"]{
+        font-size: 2rem;
+        margin: 0 1rem;
+        text-transform: capitalize;
+
+}
+input{
+        width: 40%;
+        height: 3rem;
+        margin: 0 2rem;
+        outline: none;
+        font-size: 2rem;
+        padding-left: 1rem;
+}
+input::-webkit-inner-spin-button,input::-webkit-outer-spin-button{
+        display: none;
+}
+button{
+        width: 15rem;
+        height: 3rem;
+        font-size: 2rem;
+        text-transform: capitalize;
+        border: none;
+        background: #00cc33c9;
+        border-radius: 1rem;
+        color: #fff;
+        transition: .2s linear;
+        cursor: pointer;
+}
+button:hover{
+        background: #056e1fc9;    
+}
+
+.dice-values{
+        font-size: 2rem;
+        margin-bottom: 3rem;
+}
+.dice-images img{
+        width: 150px;
+        margin: 1rem;
+}

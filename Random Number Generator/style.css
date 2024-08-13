@@ -1,0 +1,31 @@
+body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+        background: #181168;
+        color: antiquewhite;
+}
+.btn{
+        width: 15rem;
+        height: 4rem;
+        font-size: 2rem;
+        background: #d8a601;
+        border-radius: 1rem;
+        color: aliceblue;
+        border: none;
+        cursor: pointer;
+}
+.dice-values{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+}
+.dice-num{
+        font-size: 3rem;
+        margin: 2rem;
+        font-weight: bold;
+}

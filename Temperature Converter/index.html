@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Temperature Converter</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+        <form>
+                <h1>Temperature Converter:</h1>
+                <input type="number" id="value">
+                <div class="convert-select">
+                        <div class="ctof">
+                                <input type="radio" name="mesure" id="c-f">
+                                <label for="c-f">celcius to ferhanite</label>
+                        </div>
+                        <div class="ftoc">
+                                <input type="radio" name="mesure" id="f-c">
+                                <label for="f-c">ferhanite to celcius</label>
+                        </div>
+                </div>
+                <button type="button"> Convert</button>
+                <p id="converted-value"></p>
+        </form>
+        <script src="app.js"></script>
+</body>
+
+</html>
